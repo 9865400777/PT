@@ -224,12 +224,12 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 <header class="nav">
   <div class="wrap in">
     <a class="logo" href="#topo">Gesso <span>Clarice</span></a>
-    <nav class="links" aria-label="Seções"><a href="#luz">Antes e depois</a><a href="#experiencia">3 em 1</a><a href="#estilos">Estilos</a><a href="#simulador">Simulador</a><a href="#duvidas">Dúvidas</a></nav>
+    <nav class="links" aria-label="Seções"><a href="#experiencia">3 em 1</a><a href="#estilos">Estilos</a><a href="#simulador">Simulador</a><a href="#duvidas">Dúvidas</a></nav>
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 9h16M4 15h16"/></svg></button>
     <a class="btn btn-amber cta" href="#simulador">Simular projeto</a>
   </div>
 </header>
-<div class="mmenu" id="mmenu" hidden><a href="#luz">Antes e depois</a><a href="#experiencia">3 em 1</a><a href="#estilos">Estilos</a><a href="#simulador">Simulador</a><a href="#duvidas">Dúvidas</a></div>
+<div class="mmenu" id="mmenu" hidden><a href="#experiencia">3 em 1</a><a href="#estilos">Estilos</a><a href="#simulador">Simulador</a><a href="#duvidas">Dúvidas</a></div>
 
 <main id="topo">
 
@@ -247,113 +247,18 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
   </div>
 </section>
 
-<!-- FATOS -->
-<section class="light" style="padding:64px 0">
-  <div class="wrap facts">
-    <div class="fact rv"><p class="n">3 <span>em</span> 1</p><p>gesso, LED e pintura com uma equipe</p></div>
-    <div class="fact rv"><p class="n">15 m²</p><p>de forro instalado por dia</p></div>
-    <div class="fact rv"><p class="n">1 ano</p><p>de garantia no serviço</p></div>
-    <div class="fact rv"><p class="n">Grátis</p><p>visita técnica com medição</p></div>
-  </div>
-</section>
-
-<!-- ANTES E DEPOIS -->
-<section class="sec dark" id="luz">
-  <div class="wrap center">
-    <p class="eyebrow rv">Antes e depois</p>
-    <h2 class="h2 rv">Acenda a luz.</h2>
-    <p class="lead rv">Do teto cru ao ambiente aconchegante, com a mesma equipe.</p>
-    <div class="ba rv" id="ba">
-      <button class="switch" id="sw" role="switch" aria-checked="false"><span class="track" aria-hidden="true"></span><span id="swTxt">Antes · obra bruta</span></button>
-
-      <!-- ======================== FOTO "ANTES" ========================
-           Para usar uma foto real, apague o <svg>…</svg> abaixo e coloque no lugar:
-           <img src="antes.jpg" alt="Ambiente antes da obra, com laje crua">
-           (envie antes.jpg para a mesma pasta do index.html, ou use src="data:image/jpeg;base64,...") -->
-      <div class="lado antes">
-        <svg viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Antes: laje crua com fios soltos, paredes sem pintura e escada">
-          <defs><pattern id="slab" width="60" height="30" patternUnits="userSpaceOnUse"><rect width="60" height="30" fill="#7A7672"/><path d="M0 29.5H60M30 0V30" stroke="#6A6662" stroke-width="1.5"/><circle cx="14" cy="9" r="1.6" fill="#8C8883"/><circle cx="44" cy="20" r="1.2" fill="#8C8883"/></pattern></defs>
-          <polygon points="0,0 1000,0 800,150 200,150" fill="url(#slab)"/>
-          <polygon points="0,0 200,150 200,450 0,600" fill="#9A948B"/>
-          <polygon points="1000,0 800,150 800,450 1000,600" fill="#948E85"/>
-          <rect x="200" y="150" width="600" height="300" fill="#A8A299"/>
-          <g fill="#B8B2A8" opacity=".7"><rect x="260" y="200" width="90" height="60" rx="6"/><rect x="560" y="300" width="130" height="50" rx="6"/><rect x="420" y="380" width="70" height="40" rx="6"/></g>
-          <polygon points="0,600 200,450 800,450 1000,600" fill="#6B665F"/>
-          <g fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"><path d="M500 0 C500 40 495 70 500 110"/><path d="M300 30 C310 70 290 90 305 120"/><path d="M700 30 C690 60 715 85 698 118"/></g>
-          <circle cx="500" cy="118" r="10" fill="#E9E2CF"/>
-          <g stroke="#5C5248" stroke-width="7" stroke-linecap="round"><path d="M640 560 L700 330"/><path d="M720 560 L760 330"/><path d="M652 512 L728 512"/><path d="M664 464 L740 464"/><path d="M676 416 L750 416"/><path d="M688 368 L756 368"/></g>
-          <rect x="300" y="500" width="60" height="62" rx="6" fill="#56718F"/><ellipse cx="330" cy="500" rx="30" ry="8" fill="#6C88A6"/>
-          <rect width="1000" height="600" fill="#000" opacity=".42"/>
-        </svg>
-      </div>
-
-      <!-- ======================== FOTO "DEPOIS" ========================
-           Para usar uma foto real, apague o <svg>…</svg> abaixo e coloque no lugar:
-           <img src="depois.jpg" alt="O mesmo ambiente depois, com forro pintado e LED aceso">
-           (use o mesmo ângulo da foto "antes" para a transição ficar bonita) -->
-      <div class="lado depois">
-        <svg viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Depois: forro de drywall pintado, sanca com LED aceso e spots">
-          <defs>
-            <linearGradient id="cv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD58A" stop-opacity=".95"/><stop offset="1" stop-color="#FFB547" stop-opacity="0"/></linearGradient>
-            <radialGradient id="wg" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFC86B" stop-opacity=".55"/><stop offset=".6" stop-color="#FFB547" stop-opacity=".12"/><stop offset="1" stop-color="#FFB547" stop-opacity="0"/></radialGradient>
-            <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1CF" stop-opacity=".6"/><stop offset="1" stop-color="#FFF1CF" stop-opacity="0"/></linearGradient>
-            <linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9A57E"/><stop offset="1" stop-color="#A9825A"/></linearGradient>
-          </defs>
-          <polygon points="0,0 1000,0 800,150 200,150" fill="#F4F1EC"/>
-          <polygon points="80,0 920,0 760,120 240,120" fill="#FBFAF7"/>
-          <polygon points="0,0 200,150 200,450 0,600" fill="#E6DFD4"/>
-          <polygon points="1000,0 800,150 800,450 1000,600" fill="#E1D9CD"/>
-          <rect x="200" y="150" width="600" height="300" fill="#EFE9E0"/>
-          <polygon points="0,600 200,450 800,450 1000,600" fill="url(#fl)"/>
-          <rect x="590" y="200" width="160" height="150" rx="4" fill="#CFE3F5" stroke="#D9D2C7" stroke-width="8"/><path d="M670 200V350" stroke="#D9D2C7" stroke-width="6"/>
-          <rect x="285" y="355" width="250" height="70" rx="16" fill="#7F8C99"/><rect x="270" y="380" width="30" height="58" rx="10" fill="#6E7A86"/><rect x="520" y="380" width="30" height="58" rx="10" fill="#6E7A86"/><rect x="300" y="392" width="220" height="40" rx="8" fill="#8C99A6"/>
-          <path d="M600 520h150" stroke="#5B4636" stroke-width="10" stroke-linecap="round"/><path d="M615 520v40M735 520v40" stroke="#5B4636" stroke-width="8"/>
-          <rect x="765" y="390" width="28" height="46" rx="5" fill="#B7957A"/><path d="M779 392c-6-30-24-48-34-62M779 392c2-34 12-54 26-70M779 392c-2-24-2-40 0-56" stroke="#4E7B55" stroke-width="5" fill="none" stroke-linecap="round"/>
-          <polygon points="240,120 760,120 800,150 200,150" fill="url(#cv)"/>
-          <rect x="200" y="150" width="600" height="190" fill="url(#wg)"/>
-          <g fill="url(#cone)"><polygon points="368,60 382,60 430,450 320,450"/><polygon points="493,60 507,60 555,450 445,450"/><polygon points="618,60 632,60 680,450 570,450"/></g>
-          <g fill="#FFF6DF"><ellipse cx="375" cy="60" rx="14" ry="4"/><ellipse cx="500" cy="60" rx="14" ry="4"/><ellipse cx="625" cy="60" rx="14" ry="4"/></g>
-          <rect x="240" y="118" width="520" height="4" rx="2" fill="#FFE6B0"/>
-        </svg>
-      </div>
-    </div>
-    <p class="bacap rv" id="baCap">Toque no interruptor e veja a transformação.</p>
-  </div>
-</section>
-
 <!-- EXPERIÊNCIA 3 EM 1 -->
 <section class="sec light" id="experiencia">
   <div class="wrap">
     <div class="center"><p class="eyebrow rv">Sistema integrado 3 em 1</p><h2 class="h2 rv">Uma equipe. Do teto cru<br>ao teto pronto.</h2></div>
     <div class="bento">
-      <article class="cell w2 rv">
+      <article class="cell rv" style="grid-column:1/-1">
         <h3>Um único contrato.<br>Três etapas resolvidas.</h3>
         <p class="t">Você fecha uma vez e recebe o teto pronto, iluminado e pintado, sem esperar uma equipe terminar para a outra começar.</p>
         <div class="tl" id="tl">
           <div><b style="background:#0B1230">1</b><h4>Estrutura e placas</h4><p>Perfis galvanizados e drywall instalado.</p></div>
           <div><b style="background:#B45309">2</b><h4>Fiação, spots e LED</h4><p>Elétrica organizada por dentro do forro.</p></div>
           <div><b style="background:#F59E0B">3</b><h4>Massa, lixa e pintura</h4><p>Acabamento final, pronto para viver.</p></div>
-        </div>
-      </article>
-      <article class="cell rv">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 13v11l7 5"/></svg>
-        <h3>Prazo que você entende.</h3>
-        <p class="big">15 m²</p>
-        <p class="t">por dia, em média. Uma sala de 20 m² fica com o forro pronto em 2 dias.</p>
-      </article>
-      <article class="cell rv">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30h32l-3 10H11z"/><path d="M14 30V18l10-8 10 8v12"/><path d="M20 24h8"/></svg>
-        <h3>Protocolo Obra Limpa.</h3>
-        <p class="t">Lona em piso e móveis antes de começar e limpeza completa no final. Você recebe o ambiente pronto para usar.</p>
-      </article>
-      <article class="cell w2 rv">
-        <h3>Menos dor de cabeça, mais tempo livre.</h3>
-        <p class="t">Contratar separado costuma gerar atraso e um profissional culpando o outro. Aqui, a responsabilidade é de uma equipe só.</p>
-        <div class="vs">
-          <div><h4 style="color:var(--mut)">Contratando separado</h4><ul>
-            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#86868B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Três orçamentos, três agendas</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#86868B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Pintor esperando eletricista</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#86868B" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Se der problema, ninguém assume</li></ul></div>
-          <div><h4>Com a Gesso Clarice</h4><ul>
-            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Um projeto, uma conversa</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Etapas em sequência, sem espera</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Garantia de 1 ano no serviço todo</li></ul></div>
         </div>
       </article>
     </div>
@@ -514,15 +419,6 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
   function roda(){clearInterval(ft);ft=setInterval(function(){if(!document.hidden)mostra(fi+1)},4500)}
   dots.forEach(function(d,i){d.addEventListener('click',function(){mostra(i);roda()})});
   if(fotos.length>1)roda();
-
-  /* Antes e depois: o interruptor troca as duas imagens com transição suave */
-  var ba=$('#ba'),sw=$('#sw');
-  sw.addEventListener('click',function(){
-    var on=sw.getAttribute('aria-checked')!=='true';
-    sw.setAttribute('aria-checked',String(on));ba.classList.toggle('acesa',on);
-    $('#swTxt').textContent=on?'Depois · Gesso Clarice 3 em 1':'Antes · obra bruta';
-    $('#baCap').textContent=on?'Forro pintado, sanca com LED e spots, entregue pela mesma equipe.':'Toque no interruptor e veja a transformação.';
-  });
 
   /* Simulador de projeto (sem valores em reais: o valor vai pelo WhatsApp) */
   var S={cidade:'Votorantim',ambiente:'Sala de estar',estilo:'Forro liso minimalista',pacote:'2',m2:20};
