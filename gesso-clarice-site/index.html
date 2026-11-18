@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gesso Clarice | Forro de drywall, elétrica e pintura em Votorantim e Sorocaba</title>
 <meta name="description" content="Drywall, elétrica/LED e pintura com uma equipe só, em Votorantim e Sorocaba. Forro a partir de R$ 75/m², pintado a partir de R$ 95/m². Visita gratuita e garantia de 1 ano.">
-<meta name="theme-color" content="#FFFFFF">
+<meta name="theme-color" content="#0B1230">
 <meta property="og:title" content="Gesso Clarice: seu teto 100% pronto">
 <meta property="og:description" content="Drywall, elétrica e pintura com uma equipe só, em Votorantim e Sorocaba. Monte seu projeto e receba o orçamento no WhatsApp.">
 <meta property="og:type" content="website">
@@ -181,6 +181,53 @@ a{color:inherit}
   .mbar.cfgmode .msum{display:flex}
   .mbar.cfgmode .btn{flex:none;padding:0 20px;margin-left:auto}
 }
+/* ===== cores: faixas coloridas, sem caixas em volta dos textos ===== */
+.s-mid{background:radial-gradient(120% 80% at 50% 0%,#1E2A5E 0%,#0B1230 55%,#070B1F 100%);color:#F5F5F7}
+.s-mid .eyebrow{color:#FFB547}
+.s-mid .lead,.s-mid .micro,.s-mid .roomcap{color:#C3CAE3}
+.s-mid .micro b{color:#fff}
+.grad{background:linear-gradient(90deg,#FFB547,#FF6B6B 50%,#B197FC);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.room{border-radius:0;box-shadow:none;background:transparent}
+.switch{background:rgba(11,18,48,.75);color:#fff}
+.s-amber{background:linear-gradient(120deg,#D9480F 0%,#C2255C 100%);color:#fff}
+.s-amber .fact .n{background:none;color:#fff;-webkit-text-fill-color:#fff}
+.s-amber .fact p{color:rgba(255,255,255,.92);font-weight:500}
+.s-cream{background:#FFF4E6;color:#1D1D1F}
+.s-cream .eyebrow{color:#C2410C}
+.bento{gap:0 56px}
+.cell{background:none;border-radius:0;padding:36px 0;border-top:1px solid rgba(29,29,31,.14)}
+.cell:hover{transform:none;box-shadow:none}
+.s-indigo{background:linear-gradient(160deg,#312E81 0%,#4C1D95 100%);color:#fff}
+.s-indigo .eyebrow,.s-indigo .plan .tag,.s-indigo .plan .pitch b,.plan.pop .price{color:#FFC078}
+.s-indigo .lead,.s-indigo .plan .from,.s-indigo .price small{color:#D0CCF5}
+.s-indigo .plan .pitch{color:#EDEBFF}
+.s-indigo .plan ul{border-top-color:rgba(255,255,255,.2)}
+.s-indigo .plan li svg{stroke:#FFC078}
+.plans{gap:0}
+.plan,.plan.pop{background:none;border:0;border-radius:0;padding:8px 32px;border-left:1px solid rgba(255,255,255,.2)}
+.plan:first-child{border-left:0}
+@media (max-width:900px){.plan,.plan.pop{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:36px 0}.plan:first-child{border-top:0}}
+.s-sky{background:linear-gradient(180deg,#E7F0FF 0%,#F1E8FF 100%);color:#1D1D1F}
+.s-sky .eyebrow{color:#4338CA}
+.opt,.chip,.m2top input{background:transparent;border-color:rgba(49,46,129,.25)}
+.opt span{color:#55556A}
+.opt[aria-pressed="true"],.chip[aria-pressed="true"]{background:#4338CA;border-color:#4338CA;color:#fff;box-shadow:none}
+.opt[aria-pressed="true"] span{color:#DCD9FF}
+.range{accent-color:#4338CA}
+.q,.panel dl div{border-color:rgba(49,46,129,.16)}
+.s-sky .btn-blue,.s-sky .lnk{color:#4338CA}
+.s-mid .h2{color:#fff}
+.s-mid .faq details{border-bottom-color:rgba(255,255,255,.14)}
+.s-mid .faq details p{color:#B8C0DC}
+.s-mid .faq summary::after{color:#FFB547}
+.foot{background:#070B1F;color:#8C93B0}
+.foot b,.foot a{color:#fff!important}
+.foot .lnk{color:#8AB8FF}
+.nav{background:rgba(11,18,48,.72);border-bottom-color:rgba(255,255,255,.08);color:#F5F5F7}
+.nav .links{color:#C3CAE3}.nav .links a:hover{color:#fff}
+.burger{color:#fff}
+.mmenu{background:rgba(11,18,48,.97);color:#fff}
+@media (max-width:860px){.mbar{background:rgba(11,18,48,.92);border-top-color:rgba(255,255,255,.08)}.mbar .msum small{color:#C3CAE3}.mbar .msum b{color:#fff}}
 /* privacidade */
 dialog{border:0;border-radius:24px;padding:0;max-width:640px;width:calc(100% - 32px);max-height:85vh;color:var(--ink)}
 dialog::backdrop{background:rgba(0,0,0,.45)}
@@ -209,10 +256,10 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 <main id="topo">
 
 <!-- HERO -->
-<section class="hero center">
+<section class="hero center s-mid">
   <div class="wrap">
     <p class="eyebrow rv">Votorantim e Sorocaba</p>
-    <h1 class="rv" style="margin-top:8px">Do gesso à elétrica e pintura.<br>Seu teto 100% pronto.</h1>
+    <h1 class="rv" style="margin-top:8px">Do gesso à elétrica e pintura.<br><span class="grad">Seu teto 100% pronto.</span></h1>
     <p class="lead rv">Esqueça a dor de cabeça de coordenar três equipes. Entregamos seu drywall instalado, iluminado e pintado, com uma equipe só.</p>
     <div class="btns rv"><a class="btn btn-blue btn-xl" href="#configurador">Simular meu projeto</a><a class="btn btn-wa btn-xl" href="#" data-wa="rapido"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
@@ -271,7 +318,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 </section>
 
 <!-- FATOS -->
-<section class="sec gray" style="padding:64px 0">
+<section class="sec s-amber" style="padding:64px 0">
   <div class="wrap facts">
     <div class="fact rv"><p class="n">15 m²</p><p>de forro instalado por dia</p></div>
     <div class="fact rv"><p class="n">1 ano</p><p>de garantia no serviço</p></div>
@@ -281,7 +328,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 </section>
 
 <!-- EXPERIÊNCIA 3 EM 1 -->
-<section class="sec gray" id="experiencia" style="padding-top:24px">
+<section class="sec s-cream" id="experiencia">
   <div class="wrap">
     <div class="center"><p class="eyebrow rv">Sistema integrado 3 em 1</p><h2 class="h2 rv">Uma equipe. Do teto cru<br>ao teto pronto.</h2></div>
     <div class="bento">
@@ -320,7 +367,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 </section>
 
 <!-- VALORES -->
-<section class="sec" id="valores">
+<section class="sec s-indigo" id="valores">
   <div class="wrap">
     <div class="center"><p class="eyebrow rv">Transparência total</p><h2 class="h2 rv">Preço por m². Sem surpresa.</h2><p class="lead rv">Metade quando chegamos com o material, metade quando terminamos.</p></div>
     <div class="plans">
@@ -359,7 +406,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 </section>
 
 <!-- CONFIGURADOR -->
-<section class="sec gray" id="configurador">
+<section class="sec s-sky" id="configurador">
   <div class="wrap">
     <div class="center"><p class="eyebrow rv">Configurador</p><h2 class="h2 rv">Monte e calcule seu projeto.</h2><p class="lead rv">Escolha as opções e veja o valor estimado na hora.</p></div>
     <div class="cfg">
@@ -405,7 +452,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
 </section>
 
 <!-- DÚVIDAS -->
-<section class="sec" id="duvidas">
+<section class="sec s-mid" id="duvidas">
   <div class="wrap">
     <div class="center"><h2 class="h2 rv">Dúvidas frequentes.</h2></div>
     <div class="faq">
