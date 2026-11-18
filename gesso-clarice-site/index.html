@@ -172,12 +172,6 @@ a{color:inherit}
 .panel .up{margin-top:12px;font-size:.98rem;color:var(--mut)}
 .panel .btn{width:100%;margin-top:22px}
 .fine{font-size:.82rem;color:var(--mut);margin-top:14px}
-/* atalho: foto ou vídeo */
-.shot{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;margin-top:72px;padding-top:40px;border-top:2px solid var(--amber)}
-.shot svg.cam{width:52px;height:52px}
-.shot h3{font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.15}
-.shot p{color:var(--mut);margin-top:8px;max-width:620px}
-@media (max-width:760px){.shot{grid-template-columns:1fr;gap:16px;text-align:left}.shot .btn{width:100%}}
 /* dúvidas */
 .faq{max-width:780px;margin:44px auto 0}
 .faq details{border-bottom:1px solid var(--nline)}
@@ -311,8 +305,6 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
           <button class="opt" data-v="Votorantim" aria-pressed="true"><b>Votorantim</b></button><button class="opt" data-v="Sorocaba" aria-pressed="false"><b>Sorocaba</b></button></div></div>
         <div class="q rv"><h3>Ambiente.</h3><div class="opts c2" data-grupo="ambiente">
           <button class="opt" data-v="Sala de estar" aria-pressed="true"><b>Sala de estar</b></button><button class="opt" data-v="Quarto" aria-pressed="false"><b>Quarto</b></button><button class="opt" data-v="Apartamento completo" aria-pressed="false"><b>Apartamento completo</b></button><button class="opt" data-v="Comércio / Escritório" aria-pressed="false"><b>Comércio / Escritório</b></button></div></div>
-        <div class="q rv"><h3>Estilo de acabamento.</h3><div class="opts c3" data-grupo="estilo">
-          <button class="opt" data-v="Forro liso minimalista" aria-pressed="true"><b>Liso minimalista</b></button><button class="opt" data-v="Forro tabicado flutuante" aria-pressed="false"><b>Tabicado flutuante</b></button><button class="opt" data-v="Sanca com LED indireta" aria-pressed="false"><b>Sanca com LED</b></button></div></div>
         <div class="q rv"><h3>Pacote de entrega.</h3><div class="opts" data-grupo="pacote">
           <button class="opt" data-v="1" aria-pressed="false"><b>Somente drywall</b><span>Ideal se você já tem eletricista e pintor</span></button>
           <button class="opt" data-v="2" aria-pressed="true"><b>Drywall + pintura pronta</b><span>O mais escolhido</span></button>
@@ -321,7 +313,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
           <div class="m2top"><input type="number" id="m2n" min="5" max="150" step="1" value="20" inputmode="numeric" aria-label="Metragem em metros quadrados"><span class="text-xl font-semibold">m²</span></div>
           <input class="range" type="range" id="m2r" min="5" max="150" step="1" value="20" aria-label="Metragem em metros quadrados">
           <div class="chips" id="chips"><button class="chip" data-m="12" aria-pressed="false">12 m²</button><button class="chip" data-m="20" aria-pressed="true">20 m²</button><button class="chip" data-m="35" aria-pressed="false">35 m²</button><button class="chip" data-m="60" aria-pressed="false">60 m²</button></div>
-          <p class="fine">Não sabe? Multiplique a largura pelo comprimento do cômodo, ou veja o atalho logo abaixo.</p></div>
+          <p class="fine">Não sabe? Multiplique a largura pelo comprimento do cômodo.</p></div>
       </div>
       <aside class="panel rv" aria-live="polite" aria-label="Resumo do projeto">
         <p class="lbl">Prazo estimado de entrega</p>
@@ -330,7 +322,6 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
         <dl>
           <div><dt>Cidade</dt><dd id="sCidade">Votorantim</dd></div>
           <div><dt>Ambiente</dt><dd id="sAmb">Sala de estar</dd></div>
-          <div><dt>Estilo</dt><dd id="sEst">Forro liso minimalista</dd></div>
           <div><dt>Pacote</dt><dd id="sPac">Drywall + pintura pronta</dd></div>
           <div><dt>Metragem</dt><dd id="sM2">20 m²</dd></div>
         </dl>
@@ -343,17 +334,6 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
       </aside>
     </div>
 
-    <!-- Atalho para quem não sabe a metragem -->
-    <div class="shot rv">
-      <svg class="cam" viewBox="0 0 48 48" fill="none" stroke="#B45309" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16a3 3 0 0 1 3-3h6l3-4h12l3 4h6a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/><circle cx="24" cy="25" r="7"/></svg>
-      <div>
-        <h3>Não sabe a metragem ou qual modelo combina com seu teto?</h3>
-        <p>Tire uma foto ou grave um vídeo rápido de 10 segundos do ambiente e envie no WhatsApp. Nossa equipe analisa e responde com ideias e estimativa.</p>
-      </div>
-      <a class="btn btn-wa" href="#" data-wa="foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-</svg>Enviar foto ou vídeo</a>
-    </div>
   </div>
 </section>
 
@@ -362,7 +342,7 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
   <div class="wrap">
     <div class="center"><h2 class="h2 rv">Dúvidas frequentes.</h2></div>
     <div class="faq">
-      <details class="rv"><summary>Como recebo o valor do meu projeto?</summary><p>Envie suas escolhas do simulador, ou uma foto do ambiente, no WhatsApp. Respondemos com uma estimativa e sugestões. O valor fechado vem por escrito depois da visita técnica gratuita, com a medição exata.</p></details>
+      <details class="rv"><summary>Como recebo o valor do meu projeto?</summary><p>Envie suas escolhas do simulador no WhatsApp. Respondemos com uma estimativa e sugestões. O valor fechado vem por escrito depois da visita técnica gratuita, com a medição exata.</p></details>
       <details class="rv"><summary>O material está incluso?</summary><p>O orçamento por escrito lista tudo o que está incluso, material e mão de obra, sem letra miúda.</p></details>
       <details class="rv"><summary>Vocês instalam LED e spots?</summary><p>Sim. No pacote completo instalamos spots, perfis de LED, sancas iluminadas e cortineiros, com a fiação passando por dentro do forro. A quantidade de pontos é definida na visita.</p></details>
       <details class="rv"><summary>Quanto tempo leva?</summary><p>Em média 15 m² de forro por dia. Uma sala de 20 m² fica com o forro pronto em 2 dias. Pintura e elétrica somam alguns dias, combinados no orçamento.</p></details>
@@ -421,19 +401,19 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
   if(fotos.length>1)roda();
 
   /* Simulador de projeto (sem valores em reais: o valor vai pelo WhatsApp) */
-  var S={cidade:'Votorantim',ambiente:'Sala de estar',estilo:'Forro liso minimalista',pacote:'2',m2:20};
+  var S={cidade:'Votorantim',ambiente:'Sala de estar',pacote:'2',m2:20};
   var PAC={'1':'Somente drywall','2':'Drywall + pintura pronta','3':'Completo 3 em 1: drywall + pintura + elétrica/LED'};
   function atualiza(){
     $('#sPrazo').textContent=dias(S.m2);$('#mPrazo').textContent=dias(S.m2);
     $('#prazoSub').textContent=S.pacote==='1'?'para o forro, na média de 15 m² por dia':'para o forro; pintura'+(S.pacote==='3'?' e elétrica somam':' soma')+' alguns dias, combinados no orçamento';
-    $('#sCidade').textContent=S.cidade;$('#sAmb').textContent=S.ambiente;$('#sEst').textContent=S.estilo;$('#sPac').textContent=PAC[S.pacote];$('#sM2').textContent=S.m2+' m²';
+    $('#sCidade').textContent=S.cidade;$('#sAmb').textContent=S.ambiente;$('#sPac').textContent=PAC[S.pacote];$('#sM2').textContent=S.m2+' m²';
     var u=$('#upsell');
     if(S.pacote==='1'){u.hidden=false;u.innerHTML='Quer receber o teto já pintado e pronto para usar? <button type="button" class="lnk" data-up="2">Incluir pintura</button>'}
     else if(S.pacote==='2'){u.hidden=false;u.innerHTML='Quer spots ou LED? <button type="button" class="lnk" data-up="3">Ver o completo 3 em 1</button>'}
     else u.hidden=true;
     $$('#chips .chip').forEach(function(c){c.setAttribute('aria-pressed',String(Number(c.dataset.m)===S.m2))});
   }
-  function msgSim(){return'Olá, Gesso Clarice! Montei meu projeto no simulador do site:\n• Cidade: '+S.cidade+'\n• Ambiente: '+S.ambiente+'\n• Estilo: '+S.estilo+'\n• Pacote: '+PAC[S.pacote]+'\n• Metragem aproximada: '+S.m2+' m²\n• Prazo estimado do forro: '+dias(S.m2)+'\n\nGostaria de receber a estimativa de valor e sugestões de iluminação para esse espaço.'}
+  function msgSim(){return'Olá, Gesso Clarice! Montei meu projeto no simulador do site:\n• Cidade: '+S.cidade+'\n• Ambiente: '+S.ambiente+'\n• Pacote: '+PAC[S.pacote]+'\n• Metragem aproximada: '+S.m2+' m²\n• Prazo estimado do forro: '+dias(S.m2)+'\n\nGostaria de receber a estimativa de valor e sugestões de iluminação para esse espaço.'}
   function marca(g,v){$$('[data-grupo="'+g+'"] .opt').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.v===v))})}
   $$('[data-grupo]').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;S[g.dataset.grupo]=b.dataset.v;marca(g.dataset.grupo,b.dataset.v);atualiza()})});
   $('#upsell').addEventListener('click',function(e){var b=e.target.closest('[data-up]');if(!b)return;S.pacote=b.dataset.up;marca('pacote',S.pacote);atualiza()});
@@ -458,7 +438,6 @@ dialog p{color:var(--mut);margin-top:12px;font-size:.95rem}
     if(t==='mbar')t=cfgOn?'sim':'rapido';
     if(t==='sim')txt=msgSim();
     else if(t==='estilo')txt='Olá, Gesso Clarice! Vi no site o estilo "'+a.dataset.estilo+'" e quero um teto assim na minha casa.\nCidade: '+S.cidade+'.\nPode me passar ideias e uma estimativa?';
-    else if(t==='foto')txt='Olá, Gesso Clarice! Não sei a metragem certa. Vou enviar uma foto ou vídeo do ambiente para receber ideias e estimativa.';
     else if(t==='visita')txt='Olá, Gesso Clarice! Quero agendar a visita técnica gratuita.\nCidade: '+S.cidade+'.';
     else txt='Olá, Gesso Clarice! Quero um teto assim na minha casa. Pode me passar ideias e uma estimativa?';
     a.href=link(txt);a.target='_blank';a.rel='noopener';conversao();
